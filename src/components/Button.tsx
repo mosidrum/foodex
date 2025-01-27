@@ -15,7 +15,7 @@ export const Button = ({
     <button
       className={`
         text-white 
-        rounded-3xl 
+        rounded-full
         ${isBored ? `border-[2px]` : ""} 
         ${className}
       `.trim()}
