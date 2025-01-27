@@ -16,7 +16,7 @@ export const Hero = () => {
           <div className="text-white mr-1 font-pangram text-massive font-medium leading-9">
             Find chow,
           </div>
-          <img src={asap} alt="asap" className="bg-cover" />
+          <img src={asap} alt="asap" className="bg-cover bg-center" />
         </div>
         <div className="text-white mt-6 mb-10 font-base text-center leading-5">
           The patient dog eats left overs. Be the first to know when we launch.
@@ -34,7 +34,6 @@ export const Hero = () => {
         <div className="flex items-end">
           <Card padding="py-6 px-14" imageStyle="w-24 h-24" />
           <Card padding="py-6 px-14" imageStyle="w-24 h-24" />
-          <img src={phoneApp} alt="phone-app" className="object-contain" />
         </div>
       </div>
     </div>
