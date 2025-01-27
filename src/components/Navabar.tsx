@@ -10,7 +10,7 @@ export const Navabar = () => {
       <div>
         <img src={logo} />
       </div>
-      <div className="flex-between-center w-1/3">
+      <div className="flex-between-center w-1/2">
         <Button className="bg-orange py-2 px-4 font-sofia">
           Join Waitlist
         </Button>
