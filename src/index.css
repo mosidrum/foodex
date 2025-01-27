@@ -5,10 +5,16 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .flex-between-center {
   @apply flex justify-between items-center;
 }
 
 .footer-button-border {
-  @apply py-1 px-3;
+  @apply pt-0.5 pb-1 px-3;
 }

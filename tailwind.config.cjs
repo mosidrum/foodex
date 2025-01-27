@@ -13,6 +13,7 @@ module.exports = {
         orange: "#d87023",
         green: "#009F79",
         purple: "#5f63e1",
+        light: "#fff8f2",
       },
       fontFamily: {
         sofia: ["Sofia Sans", "serif"],
