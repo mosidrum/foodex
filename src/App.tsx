@@ -1,7 +1,10 @@
 import "./App.css";
+import { Navabar } from "./components";
 
-function App() {
-  return <h1 className="text-orange">Home</h1>;
-}
-
-export default App;
+export const App = () => {
+  return (
+    <div>
+      <Navabar />
+    </div>
+  );
+};

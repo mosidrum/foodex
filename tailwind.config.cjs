@@ -10,7 +10,15 @@ module.exports = {
       },
       fontFamily: {
         sofia: ["Sofia Sans", "serif"],
-        pangram: ["PT Sans Narrow", "serif"],
+        pangram: ["PT Serif Caption", "serif"],
+      },
+      fontSize: {
+        tiny: "8px",
+        small: "12px",
+        base: "14px",
+        large: "16px",
+        huge: "32px",
+        massive: "40px",
       },
     },
   },
