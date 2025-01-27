@@ -1,10 +1,11 @@
 import "./App.css";
-import { Navabar } from "./components";
+import { Navabar, Footer } from "./components";
 
 export const App = () => {
   return (
     <div>
       <Navabar />
+      <Footer />
     </div>
   );
 };
