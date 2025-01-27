@@ -23,6 +23,7 @@ module.exports = {
         contentinentaltext2: "#49280f",
         contentinentaltext1: "#3c3937",
         cardImagebackground: "#f4f3e8",
+        overlay: "#fbf6ef",
       },
       fontFamily: {
         sofia: ["Sofia Sans", "serif"],

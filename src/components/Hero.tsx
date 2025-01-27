@@ -32,8 +32,8 @@ export const Hero = () => {
           </Button>
         </div>
         <div className="flex items-end">
-          <Card />
-          <Card />
+          <Card padding="py-6 px-14" imageStyle="w-24 h-24" />
+          <Card padding="py-6 px-14" imageStyle="w-24 h-24" />
           <img src={phoneApp} alt="phone-app" className="object-contain" />
         </div>
       </div>
