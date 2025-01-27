@@ -2,10 +2,12 @@ import React from "react";
 import { JoinWaitlist } from "./JoinWaitlist";
 import asap from "../assets/asap.png";
 import { Button } from "./Button";
+import { Card } from "./Card";
+import phoneApp from "../assets/Home-app.png";
 
 export const Hero = () => {
   return (
-    <div className="py-[98px] bg-black bg-custom-bg bg-cover bg-center">
+    <div className="pt-[98px] bg-black bg-custom-bg bg-cover bg-center">
       <div className="flex flex-col justify-center items-center">
         <div className="mb-3">
           <JoinWaitlist className="text-white" starColor="white" />
@@ -20,7 +22,7 @@ export const Hero = () => {
           The patient dog eats left overs. Be the first to know when we launch.
           Join our Waitlist
         </div>
-        <div className="flex flex-col gap-3 items-center justify-center w-full max-w-md px-4">
+        <div className="flex flex-col gap-3 items-center justify-center w-full max-w-md px-4 pb-[98px]">
           <input
             className="w-full bg-white text-black border-none outline-none font-sofia rounded-2xl p-4 text-large"
             placeholder="Enter your email"
@@ -29,8 +31,12 @@ export const Hero = () => {
             Join Waitlist
           </Button>
         </div>
+        <div className="flex items-end">
+          <Card />
+          <Card />
+          <img src={phoneApp} alt="phone-app" className="object-contain" />
+        </div>
       </div>
-      <div></div>
     </div>
   );
 };

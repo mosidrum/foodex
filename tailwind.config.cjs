@@ -14,10 +14,15 @@ module.exports = {
       },
       colors: {
         white: "#ffffff",
+        gray: "#858786",
         orange: "#d87023",
         green: "#009F79",
         purple: "#5f63e1",
         light: "#fff8f2",
+        contentinental: "#d6d5ca",
+        contentinentaltext2: "#49280f",
+        contentinentaltext1: "#3c3937",
+        cardImagebackground: "#f4f3e8",
       },
       fontFamily: {
         sofia: ["Sofia Sans", "serif"],
