@@ -1,6 +1,5 @@
-import React from "react";
 import food1 from "../assets/food2.png";
-import { Card } from "./Card";
+import { GalleryCard } from "./GalleryCard";
 
 const foodGridData = Array(9).fill({
   title: "Pasta, Green Sauce & Kpomo",
@@ -12,21 +11,21 @@ const foodGridData = Array(9).fill({
 
 export const Gallery = () => {
   return (
-    <div className="grid grid-cols-3 gap-6 bg-gray-200 p-4 w-full bg-overlay">
+    <div className="grid grid-cols-3 gap-4 bg-gray-200 p-4 w-full">
       {foodGridData.map((item, index) => (
         <div key={index} className="relative">
-          {[1, 2, 3, 5, 6, 7].includes(index) && (
-            <div className="absolute inset-0 bg-overlay opacity-80 rounded-xl"></div>
-          )}
-          <Card
+          <GalleryCard
             title={item.title}
             image={item.image}
             imageAlt={item.imageAlt}
             picks={item.picks}
             price={item.price}
-            padding="px-1 py-4"
-            imageStyle="h-[74px] w-[74px]"
+            padding="px-1 py-2"
+            imageStyle="h-[60px] w-[60px]"
           />
+          {[1, 2, 3, 5, 6, 7].includes(index) && (
+            <div className="absolute inset-0 bg-overlay opacity-80 rounded-xl"></div>
+          )}
         </div>
       ))}
     </div>

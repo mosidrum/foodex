@@ -1,7 +1,7 @@
 import { MdOutlineThumbUp } from "react-icons/md";
 import { GoDotFill } from "react-icons/go";
 
-export type CardProps = {
+export type GalleryCardProps = {
   title?: string;
   image?: string;
   imageAlt?: string;
@@ -11,7 +11,7 @@ export type CardProps = {
   imageStyle?: string;
 };
 
-export const Card = ({
+export const GalleryCard = ({
   title,
   image,
   imageAlt,
@@ -19,26 +19,26 @@ export const Card = ({
   price,
   padding,
   imageStyle,
-}: CardProps) => {
+}: GalleryCardProps) => {
   return (
-    <div className="flex flex-col gap-4 p-2 mb-3 bg-white rounded-xl w-64 h-76 overflow-hidden">
+    <div className="flex flex-col gap-2 p-2 bg-white rounded-xl w-full h-full overflow-hidden">
       <div
-        className={`${padding} rounded-xl bg-cardImagebackground flex items-center justify-center h-48`}
+        className={`${padding} rounded-xl bg-cardImagebackground flex items-center justify-center h-24`}
       >
         <img
           src={image}
           alt={imageAlt}
-          className={`rounded-xl ${imageStyle}  object-cover`}
+          className={`rounded-xl ${imageStyle} object-cover`}
         />
       </div>
-      <div className="flex flex-col text-left justify-start gap-1 pb-4">
-        <div className="font-pangram text-large font-semibold text-contentinentaltext1 truncate">
+      <div className="flex flex-col text-left justify-start gap-1">
+        <div className="font-pangram text-sm font-semibold text-contentinentaltext1 truncate">
           {title}
         </div>
-        <div className="py-0.5 px-1 font-pangram tracking-[0.15em] uppercase text-small text-contentinentaltext2 bg-contentinental w-fit rounded-xl">
+        <div className="py-0.5 px-1 font-pangram tracking-[0.15em] uppercase text-xs text-contentinentaltext2 bg-contentinental w-fit rounded-xl">
           🍲 Continental
         </div>
-        <div className="flex items-center gap-2 text-tiny text-gray">
+        <div className="flex items-center gap-2 text-xs text-gray">
           <div className="flex items-center">
             <MdOutlineThumbUp />
             {picks}

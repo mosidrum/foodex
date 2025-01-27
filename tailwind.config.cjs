@@ -4,6 +4,15 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      animation: {
+        marquee: "marquee 20s linear infinite",
+      },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
       backgroundImage: {
         "custom-bg": "url('./src/assets/bg.png')",
       },
@@ -24,6 +33,7 @@ module.exports = {
         contentinentaltext1: "#3c3937",
         cardImagebackground: "#f4f3e8",
         overlay: "#fbf6ef",
+        line: "#eeeeee",
       },
       fontFamily: {
         sofia: ["Sofia Sans", "serif"],

@@ -9,6 +9,7 @@ export const App = () => {
 
       <CTA />
       <Foods />
+      <div className="h-1 w-full bg-line rounded-lg my-16" />
       <Footer />
     </div>
   );

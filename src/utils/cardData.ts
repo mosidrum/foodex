@@ -1,8 +1,8 @@
 import { CardProps } from "../components/Card";
-import food1 from "../assets/food1.jpg";
-import food2 from "../assets/food2.jpg";
-import food3 from "../assets/food3.jpg";
-import food4 from "../assets/food4.jpg";
+import food1 from "../assets/food1.png";
+import food2 from "../assets/food2.png";
+import food3 from "../assets/food3.png";
+import food4 from "../assets/food4.png";
 
 export const cardData: CardProps[] = [
   {
@@ -29,7 +29,7 @@ export const cardData: CardProps[] = [
   {
     title: "Souse Fries & Bacon",
     imageAlt: "Souse Fries & Bacon",
-    image: food4,
+    image: food1,
     picks: 184,
     price: 10000,
   },

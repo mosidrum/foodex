@@ -1,9 +1,9 @@
-import React from "react";
 import { JoinWaitlist } from "./JoinWaitlist";
 import asap from "../assets/asap.png";
 import { Button } from "./Button";
 import { Card } from "./Card";
-import phoneApp from "../assets/Home-app.png";
+import { cardData } from "../utils";
+import phone from "../assets/Home-app.png";
 
 export const Hero = () => {
   return (
@@ -31,9 +31,51 @@ export const Hero = () => {
             Join Waitlist
           </Button>
         </div>
-        <div className="flex items-end">
-          <Card padding="py-6 px-14" imageStyle="w-24 h-24" />
-          <Card padding="py-6 px-14" imageStyle="w-24 h-24" />
+
+        <div className="w-full overflow-hidden relative">
+          <div className="flex items-end animate-marquee whitespace-nowrap">
+            {cardData.map((card, index) => (
+              <div key={index} className="inline-block mx-2">
+                <Card
+                  title={card.title}
+                  image={card.image}
+                  imageAlt={card.imageAlt}
+                  picks={card.picks}
+                  price={card.price}
+                  padding="py-6 px-14"
+                  imageStyle="w-24 h-24"
+                />
+              </div>
+            ))}
+            <img src={phone} alt="phone" />
+            {cardData.map((card, index) => (
+              <div key={`duplicate-1-${index}`} className="inline-block mx-2">
+                <Card
+                  title={card.title}
+                  image={card.image}
+                  imageAlt={card.imageAlt}
+                  picks={card.picks}
+                  price={card.price}
+                  padding="py-6 px-14"
+                  imageStyle="w-24 h-24"
+                />
+              </div>
+            ))}
+            {/* Duplicate Cards (Second Set) */}
+            {cardData.map((card, index) => (
+              <div key={`duplicate-2-${index}`} className="inline-block mx-2">
+                <Card
+                  title={card.title}
+                  image={card.image}
+                  imageAlt={card.imageAlt}
+                  picks={card.picks}
+                  price={card.price}
+                  padding="py-6 px-14"
+                  imageStyle="w-24 h-24"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
