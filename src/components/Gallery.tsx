@@ -11,7 +11,7 @@ const foodGridData = Array(9).fill({
 
 export const Gallery = () => {
   return (
-    <div className="grid grid-cols-3 gap-4 bg-gray-200 p-4 w-full">
+    <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 bg-gray-200 p-4 w-full">
       {foodGridData.map((item, index) => (
         <div key={index} className="relative">
           <GalleryCard
