@@ -5,7 +5,7 @@ import andLove from "../assets/andLove.png";
 
 export const Foods = () => {
   return (
-    <div className="relative bg-light rounded-lg mt-14">
+    <div className="relative flex flex-col 2xl:flex-row bg-light rounded-lg mt-14">
       <img
         src={andLove}
         alt="andLove"

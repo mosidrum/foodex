@@ -5,7 +5,7 @@ type JoinWaitlistProps = {
   className?: string;
 };
 
-const ICON_SIZE = 10;
+const ICON_SIZE = 20;
 
 export const JoinWaitlist = ({ starColor, className }: JoinWaitlistProps) => (
   <div className="font-pangram flex items-center gap-2 font-normal">

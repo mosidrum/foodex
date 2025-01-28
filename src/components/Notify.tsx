@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import person from "../assets/ikwuegbu.png";
 import thumbs from "../assets/thumb-up.png";
 import onions from "../assets/onions.png";
@@ -52,7 +52,7 @@ export const Notify = () => {
             />
           ))}
         </div>
-        <div className="absolute w-48 flex flex-col items-start justify-center -mt-[400px] -right-20 p-1.5 gap-1.5 text-white rounded-md border-[2px] border-white bg-orange">
+        <div className="absolute w-48 flex flex-col items-start justify-center -mt-[400px] -right-10 lg:-right-20 p-1.5 gap-1.5 text-white rounded-md border-[2px] border-white bg-orange">
           <img src={dollar} alt={dollar} className="h-4 w-4 object-fill" />
           <div className="text-small font-semibold font-sofia">
             You can buy all for <span className="text-[#01FFC2]">N2,500</span>{" "}

@@ -34,6 +34,8 @@ module.exports = {
         cardImagebackground: "#f4f3e8",
         overlay: "#fbf6ef",
         line: "#eeeeee",
+        subMenu: "#353542",
+        iconbg: "#f7ece4",
       },
       fontFamily: {
         sofia: ["Sofia Sans", "serif"],
