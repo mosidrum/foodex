@@ -43,7 +43,7 @@ export const Hero = () => {
       <div className="w-full overflow-hidden relative md:mt-8">
         <div className="flex items-end animate-marquee whitespace-nowrap">
           {cardData.map((card, index) => (
-            <div key={index} className="inline-block mx-2">
+            <div key={index} className="inline-block mx-2 mb-2">
               <Card
                 title={card.title}
                 image={card.image}
@@ -57,7 +57,10 @@ export const Hero = () => {
           ))}
           <img src={phone} alt="phone" className="md:hidden" />
           {cardData.map((card, index) => (
-            <div key={`duplicate-1-${index}`} className="inline-block mx-2">
+            <div
+              key={`duplicate-1-${index}`}
+              className="inline-block mx-2 mb-2"
+            >
               <Card
                 title={card.title}
                 image={card.image}
