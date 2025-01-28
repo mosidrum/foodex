@@ -33,7 +33,7 @@ export const Hero = () => {
           />
           <Button
             isBored
-            className="w-2/4 py-4 px-11 border-white bg-green md:w-auto"
+            className="w-3/4 py-4 px-11 border-white bg-green md:w-auto"
           >
             Join Waitlist
           </Button>
