@@ -10,7 +10,6 @@ export const CTA = () => {
         <JoinWaitlist starColor="black" />
       </div>
       <div className="flex flex-col gap-8 px-4 md:px-16">
-        {/* Desktop Text */}
         <div className="hidden font-pangram leading-10 text-[40px] text-center md:flex md:flex-col md:items-center md:gap-5">
           <span>tired of eating the</span>
           <Button
@@ -20,8 +19,6 @@ export const CTA = () => {
             🍛 same dishes everyday? 🍝
           </Button>
         </div>
-
-        {/* Mobile Text */}
         <div className="font-pangram leading-10 text-[28px] text-center md:hidden">
           Are you tired of eating the same dishes{" "}
           <Button
@@ -31,15 +28,11 @@ export const CTA = () => {
             everyday?
           </Button>
         </div>
-
-        {/* Description */}
         <div className="font-sofia leading-6 w-full max-w-[547px] text-center text-base font-medium px-2">
           Do you crave new and exciting dishes? Look no further! Chow is the
           perfect solution for discovering your next dish.
         </div>
       </div>
-
-      {/* Clouds */}
       <img
         src={cloud2}
         alt="cloud2"

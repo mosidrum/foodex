@@ -1,4 +1,3 @@
-import "./App.css";
 import { Navabar, Footer, CTA, Hero, Foods } from "./components";
 
 export const App = () => {
